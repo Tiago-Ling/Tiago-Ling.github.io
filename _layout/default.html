@@ -1,30 +1,41 @@
 <!DOCTYPE html>
-	<html>
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-      <link rel="stylesheet" href="/stylesheets/styles.css" type="text/css" />
-      <link rel="stylesheet" href="/stylesheets/github-dark.css" type="text/css" />
-		</head>
-		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/cv">CV</a></li>
-	        		<li><a href="/blog">Blog</a></li>
-	    		</ul>
-			</nav>
-			<div class="container">
-			
-			{{ content }}
-			
-			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-	        		<li><a href="mailto:ling.tiago@gmail.com">email</a></li>
-	        		<li><a href="https://github.com/Tiago-Ling">github.com/Tiago-Ling</a></li>
-				</ul>
-			</footer>
-		</body>
-	</html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>{{ page.title }}</title>
+    <!-- link to main stylesheet -->
+    <link rel="stylesheet" href="stylesheets/styles.css" type="text/css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css" type="text/css">
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  </head>
+  <body>
+    <div id="header">
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/cv">CV</a></li>
+          <li><a href="/blog">Blog</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container">
+
+    {{ content }}
+
+    </div><!-- /.container -->
+    <footer>
+      <ul>
+        <li><a href="mailto:ling.tiago@gmail.com">email</a></li>
+        <li><a href="https://github.com/Tiago-Ling">github.com/Tiago-Ling</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
